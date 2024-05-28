@@ -16,6 +16,13 @@ GPT 기반 날씨알리미는 kimjhhhhhhhhhhhhhh과 tkdgur7234 2인이 기획하
 - 주간 및 월간 날씨 예보
 - 다국어 지원 (영어 가능)
 
+## Authors
+  - [tkdgur7234r](https://github.com/tkdgur7234) - **박상혁** - <tkdgur7234@kakao.com>
+    날씨알리미 메인개발
+  - [kimjhhhhhhhhhhhhhh](https://github.com/kimjhhhhhhhhhhhhhh) - **김정현** - <wjdgus08590@naver.com>
+    날씨알리미 UI디자인 및 개발
+  
+
 # 배포
 - [날씨알리미](https://weather-task-zeta.vercel.app/)
 
