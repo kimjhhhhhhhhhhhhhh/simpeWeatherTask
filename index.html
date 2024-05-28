@@ -69,15 +69,14 @@
                 <div class="city"><span class="country"></span></div>
                 <div class="temp"></div>
             </div>
+
             <div class="content-bottom">
                 <div class="part1">
                     <div>
-                        <span>날씨 : <span class="condition"></span>
-                        </span>
+                        <span>날씨 : <span class="condition"></span></span>
                     </div>
                     <div>
-                        <span>자세한 날씨 : <span class="description"></span>
-                        </span>
+                        <span>자세한 날씨 : <span class="description"></span></span>
                     </div>
                     <div>
                         <span>습도 : <span class="humidity"></span></span>
@@ -112,9 +111,28 @@
                     <div>
                         <span>현재시간 : <span class="date-response"></span></span>
                     </div>
-
                 </div>
             </div>
+
+            <!-- content-middle --><!--
+            <div class="content-middle">
+                <div class="part1">
+                    <div>
+                        <span>추가 정보 1: <span class="extra-info1"></span></span>
+                    </div>
+                </div>
+                <div class="part2">
+                    <div>
+                        <span>추가 정보 2: <span class="extra-info2"></span></span>
+                    </div>
+                </div>
+                <div class="part3">
+                    <div>
+                        <span>추가 정보 3: <span class="extra-info3"></span></span>
+                    </div>
+                </div>
+            </div>-->
+
         </div>
         <div class="search-boxs">
             <div class="forCity">
@@ -132,7 +150,7 @@
                     <input type="text" autocomplete="off" placeholder="Search..." id="lat">
                     <label for="lon">경도:</label>
                     <input type="text" autocomplete="off" placeholder="Search..." id="lon">
-                    <button id="coordinantBtn" onclick="getSunriseSunset()"><i class="bi bi-search"></i> </button>
+                    <button id="coordinantBtn" onclick="getSunriseSunset()"><i class="bi bi-search"></i></button>
                 </div>
                 <div class="validationForCoor"></div>
             </div>
@@ -145,10 +163,27 @@
                 <div><button id="currentLoc"><i class="bi bi-geo-alt"></i></button></div>
                 <div class="validationForCurrentLocation"></div>
             </div>
-
         </div>
-
+         <div class="content-middle">
+            <div class="part1">
+                <div>
+                    <span>추가 정보 1: <span class="extra-info1"></span></span>
+                </div>
+            </div>
+            <div class="part2">
+                <div>
+                    <span>추가 정보 2: <span class="extra-info2"></span></span>
+                </div>
+            </div>
+            <div class="part3">
+                <div>
+                    <span>추가 정보 3: <span class="extra-info3"></span></span>
+                </div>
+            </div>
+        </div>
     </div>
+    
+
     <div id="chat-container">
         <div id="chat-messages"></div>
         <div id="user-input">
@@ -160,7 +195,6 @@
     <script src="chat.js"></script>
     <script src="main.js"></script>
     <script>
-        
         async function getSunriseSunset() {
             const latitude = document.getElementById('lat').value;
             const longitude = document.getElementById('lon').value;
