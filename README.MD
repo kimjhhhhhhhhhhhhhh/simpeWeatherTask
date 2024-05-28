@@ -24,7 +24,7 @@ GPT 기반 날씨알리미는 kimjhhhhhhhhhhhhhh과 tkdgur7234 2인이 기획하
   
 
 # 배포
-- [날씨알리미](https://weather-task-zeta.vercel.app/)
+- [날씨알리미](https://weather-task-bot.vercel.app/)
 
 # 결과물
 OpenWeatherMap API와 GPT를 활용하여 웹페이지를 구현하고 다양한 기능을 제공하는 결과물입니다.
