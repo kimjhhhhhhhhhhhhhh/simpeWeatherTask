@@ -11,54 +11,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <!--
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .message {
-            border-top: 1px solid #ccc;
-            padding: 10px;
-            margin-top: 5px;
-            background-color: #e6e6e6;
-        }
-        #chat-container {
-            width: 400px;
-            height: 850px;
-            border: 3px solid rgb(34, 31, 31);
-            margin-left: 100px;
-            margin-right: 90px;
-            display: flex;
-            flex-direction: column;
-            background-color: lightgray;
-        }
-        #chat-messages {
-            flex: 1;
-            overflow-y: auto;
-            padding: 10px;
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        #user-input {
-            display: flex;
-            padding: 10px;
-        }
-        #user-input input {
-            flex: 1;
-            padding: 10px;
-            outline: none;
-        }
-        #user-input button {
-            border: none;
-            background-color: #ee6d04;
-            color: white;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-    </style>-->
+    
 </head>
 
 <body>
@@ -69,9 +22,7 @@
                 <div class="city"><span class="country"></span></div>
                 <div class="temp"></div>
             </div>
-            <div class="additional-content">
-                <!-- 여기에 추가적인 컨텐츠를 추가합니다 -->
-            </div>
+            
             <div class="content-bottom">
                 <div class="part1">
                     <div>
@@ -121,7 +72,7 @@
                 <h3>도시이름</h3>
                 <div class="input-btn">
                     <input autocomplete="off" type="text" placeholder="Search..." id="cityName">
-                    <button id="cityBtn"><i class="bi bi-search"></i></button>
+                    <button id="cityBtn" onclick="getSunriseSunset()"><i class="bi bi-search"></i></button>
                 </div>
                 <div class="validationForName"></div>
             </div>
@@ -145,23 +96,39 @@
                 <div><button id="currentLoc"><i class="bi bi-geo-alt"></i></button></div>
                 <div class="validationForCurrentLocation"></div>
             </div>
-        </div>
-         <div class="content-middle">
+        </div> <!-- 추후에 주간기상 넣을거임!
+         <div class="content-middle1">
             <div class="part1">
                 <div>
-                    <span>추가 정보 1: <span class="extra-info1"></span></span>
+                    <span> <span class="extra-info1"></span></span>
                 </div>
             </div>
             <div class="part2">
                 <div>
-                    <span>추가 정보 2: <span class="extra-info2"></span></span>
+                    <span> <span class="extra-info2"></span></span>
                 </div>
             </div>
             <div class="part3">
-                <div>
-                    <span>추가 정보 3: <span class="extra-info3"></span></span>
-                </div>
+                <span> <span class="extra-info2"></span></span>
             </div>
+        </div> -->
+        <div class="content-middle2">
+            
+            
+                <div class="recent-searches">
+                    <h2>최근 도시 목록</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="recentSearchesBody">
+                            <!-- This will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            
         </div>
     </div>
     
@@ -176,29 +143,10 @@
 
     <script src="chat.js"></script>
     <script src="main.js"></script>
-    <script>
-        async function getSunriseSunset() {
-            const latitude = document.getElementById('lat').value;
-            const longitude = document.getElementById('lon').value;
-            const url = `https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}&formatted=0`;
-
-            try {
-                const response = await fetch(url);
-                if (response.ok) {
-                    const data = await response.json();
-                    const sunrise = new Date(data.results.sunrise).toLocaleTimeString();
-                    const sunset = new Date(data.results.sunset).toLocaleTimeString();
-
-                    document.querySelector('.sunrise-time').textContent = sunrise;
-                    document.querySelector('.sunset-time').textContent = sunset;
-                } else {
-                    console.error('Error:', response.status);
-                }
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        }
-    </script>
+    
 </body>
 
 </html>
+
+
+ 
