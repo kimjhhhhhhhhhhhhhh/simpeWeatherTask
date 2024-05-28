@@ -1,3 +1,4 @@
+
 // 채팅 메시지를 표시할 DOM
 const chatMessages = document.querySelector('#chat-messages');
 // 사용자 입력 필드
