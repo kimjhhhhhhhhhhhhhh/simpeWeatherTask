@@ -215,3 +215,13 @@ body.cloudy {
 body.snow {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaWeeusFC4GUxOMgDvTaYPgjVN8');
 }
+
+body.foggy {
+    background-image: url('https://i.namu.wiki/i/xdBkIIJvKRYX4KeNb6MnZCqnmXraYcf9eIXnmHW2ynNLiz1WAwGSFvYrzM--kJ1ewscU-fOn-WRfV1jCefCwsA.webp');
+    background-size: cover;
+}
+
+body.rain {
+    background-image: url('https://mblogthumb-phinf.pstatic.net/MjAyMzA3MTJfMzYg/MDAxNjg5MTUxMzQyMTE3._bFlknX_Fr9mN0OUHVtv4m0tiO8n3TPUxizY4ZoZP3og.XAKkwIwem8esnvqyfwC7RmrmvIpxc0dXbtppdPSP65Mg.JPEG.kma_131/GettyImages-1407844890_(2).jpg?type=w800');
+    background-size: cover;
+}
